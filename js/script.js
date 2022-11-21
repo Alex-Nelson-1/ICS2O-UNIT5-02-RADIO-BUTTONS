@@ -13,19 +13,18 @@ if (navigator.serviceWorker) {
   })
 }
 
-const integer = Math.floor(Math.random() * 6) + 1 
+const integer = Math.floor(Math.random() * 6) + 1
 
 /**
  * This function displays an alert.
  */
 
 function myButtonClicked() {
-  numberPositive = document.getElementById("option-1").checked 
+  numberPositive = document.getElementById("option-1").checked
 
   if (numberPositive == true) {
     document.getElementById("output").innerHTML = integer
-  }
-  else {
+  } else {
     document.getElementById("output").innerHTML = integer * -1
   }
 }

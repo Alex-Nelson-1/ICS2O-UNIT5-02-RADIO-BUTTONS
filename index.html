@@ -12,7 +12,10 @@
       rel="canonical"
       href="https://Alex-Nelson-1.github.io/ICS2O-UNIT5-02-RADIO-BUTTONS/"
     />
-    <link rel="manifest" href="/ICS2O-UNIT5-02-RADIO-BUTTONS/manifest.webmanifest" />
+    <link
+      rel="manifest"
+      href="/ICS2O-UNIT5-02-RADIO-BUTTONS/manifest.webmanifest"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -56,19 +59,42 @@
       </header>
       <main class="mdl-layout__content">
         <!-- Raised button with ripple -->
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-  <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked> <span class="mdl-radio__label">Value: Positive</span>
-</label>
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-  <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
-  <span class="mdl-radio__label">Value: Negative</span>
-</label>
-        <br>
-        <br>
-         <!-- Accent-colored raised button with ripple -->
-     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="myButtonClicked()">
-  Button
-</button>
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="option-1"
+        >
+          <input
+            type="radio"
+            id="option-1"
+            class="mdl-radio__button"
+            name="options"
+            value="1"
+            checked
+          />
+          <span class="mdl-radio__label">Value: Positive</span>
+        </label>
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="option-2"
+        >
+          <input
+            type="radio"
+            id="option-2"
+            class="mdl-radio__button"
+            name="options"
+            value="2"
+          />
+          <span class="mdl-radio__label">Value: Negative</span>
+        </label>
+        <br />
+        <br />
+        <!-- Accent-colored raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()"
+        >
+          Button
+        </button>
         <div id="output">?</div>
       </main>
     </div>
