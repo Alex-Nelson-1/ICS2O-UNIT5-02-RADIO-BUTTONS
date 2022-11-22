@@ -13,20 +13,19 @@ if (navigator.serviceWorker) {
   })
 }
 
-
 var numberPositive = 1
 /**
  * This function displays an alert.
  */
 
 function generateInteger() {
-  numberPositive = document.getElementById("option-1").checked 
+  numberPositive = document.getElementById("option-1").checked
 
   if (numberPositive == true) {
-    document.getElementById("output").innerHTML = "Number value: " + (Math.floor(Math.random() * 6) + 1)
-  } 
-  else {
-    document.getElementById("output").innerHTML = "Number value: " + (Math.floor(Math.random() * -6) + 1) 
+    document.getElementById("output").innerHTML =
+      "Number value: " + (Math.floor(Math.random() * 6) + 1)
+  } else {
+    document.getElementById("output").innerHTML =
+      "Number value: " + (Math.floor(Math.random() * -6) + 1)
   }
 }
-
