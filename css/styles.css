@@ -21,10 +21,12 @@
   opacity: 0.001;
 }
 
+/* Website background color*/
 body {
   background-color: pink;
 }
 
+/* Code for all website text */
 p {
   color: black;
   font-family: Helvetica, Arial, sans-serif;
@@ -33,6 +35,7 @@ p {
   padding-top: 15pt;
 }
 
+/* Code to automatically place images to the right of text */
 img {
   float: right;
   margin-right: 15px;

@@ -1,5 +1,5 @@
 // Created by: Alex Nelson
-// Created on: Oct 2022
+// Created on: Nov 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -13,18 +13,20 @@ if (navigator.serviceWorker) {
   })
 }
 
-const integer = Math.floor(Math.random() * 6) + 1
 
+var numberPositive = 1
 /**
  * This function displays an alert.
  */
 
-function myButtonClicked() {
-  numberPositive = document.getElementById("option-1").checked
+function generateInteger() {
+  numberPositive = document.getElementById("option-1").checked 
 
   if (numberPositive == true) {
-    document.getElementById("output").innerHTML = integer
-  } else {
-    document.getElementById("output").innerHTML = integer * -1
+    document.getElementById("output").innerHTML = "Number value: " + (Math.floor(Math.random() * 6) + 1)
+  } 
+  else {
+    document.getElementById("output").innerHTML = "Number value: " + (Math.floor(Math.random() * -6) + 1) 
   }
 }
+
